@@ -1,0 +1,36 @@
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+    color: #554C00;
+}
+
+body {
+    margin: 10px 10%;
+    background-color: #FFF6AA;
+}
+
+h1 {
+    text-align: center;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #AA9E39;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
