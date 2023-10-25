@@ -1,0 +1,113 @@
+* {
+    /* https://developer.mozilla.org/en-US/docs/Web/CSS/box-sizing */
+    box-sizing: border-box;
+}
+
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Roboto", sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #FFF6AA;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Unna', serif;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100vh;
+}
+
+.hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 40px;
+    font-family: 'Unica One', sans-serif;
+    text-align: center;
+}
+
+.hero-image {
+    background-image: url("images/coconut-chicken-curry-1-11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    flex: 33.33%;
+}
+
+.col-2 {
+    flex: 66.66%;
+}
+
+.featured-content img {
+    width: 100%;
+    height: auto;
+}
+
+.half {
+    width: 50%;
+}
+
+.neighborhoods_item {
+    flex: 50%;
+    padding-left: 48px;
+    padding-bottom: 50px;
+}
+
+.visit-attend header {
+    background-image: url("images/coconut-chicken-curry-1-11.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    height: 80vh;
+}
+
+strong {
+    font-weight: bold;
+}
+
+a {
+    color: #AA9E39;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+.width-50 {
+    width: 50%;
+}
