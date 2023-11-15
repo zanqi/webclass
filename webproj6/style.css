@@ -1,0 +1,1142 @@
+/*        @font-face{
+            font-family:'Montserrat Light';
+            src: url('https://pages.upwork.com/rs/518-RKL-392/images/Montserrat-Light.otf') format('opentype');
+        }
+
+        @font-face{
+            font-family:'Montserrat';
+            src: url('https://pages.upwork.com/rs/518-RKL-392/images/Montserrat-Regular.otf') format('opentype');
+        }
+
+        @font-face{
+            font-family:'Montserrat Bold';
+            src: url('https://pages.upwork.com/rs/518-RKL-392/images/Montserrat-Bold.otf') format('opentype');
+        }*/
+
+#row1,
+#row2,
+#row3 {
+    display: none;
+
+}
+
+.show-row-1 #row1,
+.show-row-2 #row2,
+.show-row-3 #row3 {
+    display: block;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    font-smoothing: antialiased;
+    -webkit-font-smoothing: antialiased;
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+    -webkit-text-size-adjust: none;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    height: 100%;
+    color: #666666;
+    font-size: 14px;
+    /* font-family: Helvetica, Arial, sans-serif; */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #5bbc2e;
+}
+
+a:hover {
+    color: #008329;
+}
+
+/* Container and row styles */
+
+section {
+    clear: both;
+    padding: 50px 24px 80px;
+}
+
+.alt-shade {
+    background: #f7f7f7;
+}
+
+section:before,
+section:after {
+    content: " ";
+    /* 1 */
+    display: table;
+    /* 2 */
+}
+
+section:after {
+    clear: both;
+}
+
+.row {
+    max-width: 1278px;
+    margin: 0 auto;
+    width: 100%;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin-bottom: 30px;
+    margin-top: 0;
+    color: #494949;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a {
+    color: #494949;
+    text-decoration: none;
+}
+
+h1 a:hover,
+h2 a:hover,
+h3 a:hover,
+h4 a:hover {
+    color: #008329;
+}
+
+h1,
+h2 {
+    font-weight: 700;
+    margin-bottom: 30px;
+    /*            font-family:'Montserrat Bold';*/
+}
+
+h3,
+h4 {
+    font-weight: normal;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 50px;
+    margin-top: -10px;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 38px;
+    margin-top: -7px;
+}
+
+h3 {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 24px;
+}
+
+
+
+
+footer h4 {
+    font-size: 20px;
+    margin-bottom: 31px;
+    font-weight: normal;
+    line-height: 24px;
+    font-style: italic;
+    margin-top: -3px;
+    color: #b2b2b2;
+}
+
+p,
+li,
+.col>div {
+    margin-bottom: 20px;
+}
+
+p,
+li {
+    margin-top: -6px;
+}
+
+
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+li {
+    margin-left: 2em;
+}
+
+li:before {
+    content: '\f054';
+    font-family: 'FontAwesome';
+    float: left;
+    margin-left: -2em;
+    color: #5bbc2e;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+
+}
+
+header {
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+header section {
+    padding-top: 22px;
+    padding-bottom: 22px;
+}
+
+.headerLogos img {
+    display: block;
+    margin: 0 auto;
+    width: 300px;
+    height: 50px;
+    object-fit:cover;
+    object-position: center;
+}
+
+.headerLogos a {
+    display: block;
+    margin: 0 auto 10px;
+}
+
+.headerLogos a:last-child {
+    margin: 0 auto;
+}
+
+.headerRight>* {
+    margin-top: 20px !important;
+}
+
+div#headerLogos,
+div#headerRight {
+    margin-bottom: 0 !important;
+}
+
+.col {
+    margin-bottom: 50px;
+}
+
+.col.last-visible-col {
+    margin-bottom: 0;
+}
+
+.mktoSnippet {
+    margin: 0 !important;
+}
+
+.mktoForm .mktoLabel {
+    padding-top: 0 !important;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+}
+
+.mktoForm .mktoRequiredField label.mktoLabel {
+    font-weight: normal !important;
+}
+
+.infoText h2 {
+    margin-bottom: 80px;
+}
+
+.btn,
+body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    border: 2px solid #e0e0e0;
+    color: #37a000;
+
+    font-size: 14px;
+    padding: 9px 40px;
+    text-decoration: none;
+    margin: 0 auto;
+    display: inline-block;
+    font-weight: normal;
+    font-weight: bold;
+}
+
+.btn:hover {
+    border-color: #008329 !important;
+    color: #008329;
+}
+
+header .btn,
+body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    padding: 7px 10px;
+    border: none;
+    background: #5bbc2e;
+    color: #fff;
+}
+
+body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    line-height: 24px !important;
+    border: none !important;
+    padding: 19px 40px !important;
+    width: 100% !important;
+    font-size: 16px !important;
+}
+
+header .btn:hover,
+body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton:hover {
+    background: #008329;
+    color: #fff;
+}
+
+.btn.secondary {
+    color: #37A000;
+    background: #fff;
+    border: 2px solid #E0E0E0;
+    padding: 7px 38px;
+}
+
+.btn.secondary:hover {
+    color: #008329;
+    border-color: #008329;
+}
+
+.btn.white {
+    color: #fff;
+    background: transparent;
+    border: 2px solid #fff;
+    padding: 7px 38px;
+}
+
+.btn.white:hover {
+    background: #fff;
+    border-color: #fff;
+    color: #5bbc2e;
+}
+
+hr {
+    width: 100%;
+    height: 2px;
+    background-color: #e0e0e0;
+    border: none;
+    color: #e0e0e0;
+    margin: 0 auto 20px;
+}
+
+hr.small {
+    width: 80px;
+
+}
+
+.bannerFormFooter,
+.bottomFormFooter {
+    font-size: 13px;
+    line-height: 20px;
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 0 !important;
+}
+
+.bannerFormFooter a,
+.bottomFormFooter a {
+    text-decoration: none;
+}
+
+.bannerFormFooter :last-child,
+.bottomFormFooter :last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background: #666;
+    color: #b2b2b2;
+    text-align: center;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#footerText :last-child {
+    margin-bottom: 0 !important;
+}
+
+/*        .copyright {
+            font-family:'Montserrat Light'
+        }*/
+
+header p {
+    margin-bottom: 0;
+    line-height: 1px;
+}
+
+.embed-wrapper {
+    padding-top: 55px;
+    max-width: 843px;
+    margin: 0 auto;
+}
+
+.embed-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#bannerImage p,
+#bannerImage {
+    margin: 0;
+}
+
+#bannerImage img {
+    display: block;
+}
+
+.social-link {
+    margin: 0 8px -4px;
+    display: inline-block;
+}
+
+.testimonial-image {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.headshot span {
+    display: inline-block;
+    vertical-align: baseline;
+    zoom: 1;
+    *display: inline;
+    *vertical-align: auto;
+    position: relative;
+    padding: 0 20px;
+}
+
+.headshot span:before,
+.headshot span:after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    border-top: 1px solid #d9d9d9;
+}
+
+.headshot span:before {
+    right: 100%;
+}
+
+.headshot span:after {
+    left: 100%;
+}
+
+.headshot img,
+.presenter-headshot img {
+    border-radius: 50%;
+    border: 5px solid #f0f0f0;
+    width: 150px;
+    height: 150px;
+    object-fit:cover;
+    object-position: center;
+}
+
+.presenter-headshot {
+    text-align: center;
+    display: block;
+}
+
+.presenter-bio {
+    display: block;
+    padding-bottom: 20px;
+}
+
+.testimonial {
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.testimonial .row {
+    max-width: 992px;
+}
+
+.credit {
+    font-size: 13px;
+    line-height: 20px;
+
+    margin-bottom: 20px;
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.headshot .credit {
+    border-top: 1px solid #d9d9d9;
+    margin: 20px auto;
+    padding-top: 20px;
+}
+
+.mktoForm {
+    width: 100% !important;
+    margin: 0 auto;
+    padding: 0 !important;
+    margin-bottom: 30px;
+}
+
+.mktoForm .mktoFormCol,
+.mktoForm .mktoFieldWrap,
+.mktoForm .mktoLabel {
+    float: none;
+    width: 100% !important;
+    display: block;
+}
+
+.mktoFormCol {
+    margin-bottom: 0 !important;
+}
+
+.mktoForm .mktoOffset {
+    display: none;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=tel],
+.mktoForm input[type=email],
+.mktoForm select,
+.mktoForm textarea {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px !important;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    font-size: 14px !important;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 22px;
+}
+
+.mktoForm select,
+.mktoForm textarea,
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date] {
+    width: 100% !important;
+    height: 40px !important;
+    border: 2px solid #e2e2e2;
+    border-radius: 3px;
+}
+
+.mktoForm .mktoRequiredField .mktoAsterix {
+    color: #5bbc2e !important;
+    float: none !important;
+    display: inline !important;
+    padding-right: 0 !important;
+    padding-left: 5px !important;
+}
+
+.mktoForm textarea {
+    height: 100px !important;
+}
+
+.mktoForm .mktoLabel {
+    margin-bottom: 10px;
+    color: #666 !important;
+    padding-top: 0;
+}
+
+.mktoForm .mktoFieldWrap {
+    margin-bottom: 20px;
+}
+
+.mktoButtonWrap {
+    margin: 0 auto !important;
+}
+
+.mktoButtonRow {
+    text-align: center !important;
+    display: block !important;
+    width: 100% !important;
+    padding-top: 10px !important;
+    padding-bottom: 24px !important;
+}
+
+.mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    margin: 0 auto !important;
+}
+
+.cta {
+    border: 1px solid #e0e0e0;
+    padding: 50px 24px;
+    max-width: 570px;
+    margin: 0 auto !important;
+    background: #fff;
+}
+
+.cta h2 {
+    margin-bottom: 50px;
+}
+
+#form,
+#image {
+    display: none;
+}
+
+#form {
+    padding-top: 30px;
+}
+
+.banner-sidebar-form #form {
+    display: block;
+}
+
+.banner-sidebar-image #image {
+    display: block;
+}
+
+.row1col,
+.row3col {
+    display: none;
+}
+
+.row1-2col .row1col {
+    display: block;
+}
+
+.row1-2col .row1col:last-child {
+    display: none;
+}
+
+.row1-3col .row1col:last-child {
+    display: block;
+}
+
+.row1-3col .row1col {
+    display: block;
+}
+
+.row3-2col .row3col {
+    display: block;
+}
+
+.row3-2col .row3col:last-child {
+    display: none;
+}
+
+.row3-3col .row3col:last-child {
+    display: block;
+}
+
+.row3-3col .row3col {
+    display: block;
+}
+
+.row1col,
+.row3col {
+    padding-top: 20px;
+}
+
+.bannerImage {
+    text-align: center;
+}
+
+hr {
+    width: 80px;
+    height: 2px;
+    background-color: #e0e0e0;
+    border: none;
+    color: #e0e0e0;
+    margin: 0 auto 24px;
+}
+
+#bottomForm .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+    max-width: 350px;
+}
+
+#bottomForm form {
+    max-width: 992px;
+}
+
+#bottomForm .mktoButtonRow {
+    padding-bottom: 0 !important;
+    ;
+}
+
+#bottomFormCol {
+    display: none;
+}
+
+.show-bottom-form #bottomFormCol {
+    display: block;
+}
+
+#bottomFormCol .mktoForm .mktoFormRow {
+    clear: none !important;
+}
+
+.presenters {
+    width: 100%;
+}
+
+@media screen and (min-width: 400px) {
+    .headerLogos a {
+        display: inline-block;
+        padding-right: 15px;
+        border-right: 1px solid #ccc;
+        margin: 0 15px 0 0;
+
+    }
+
+    .headerLogos a:last-child {
+        padding: 0;
+        margin: 0;
+        border: none;
+    }
+
+    .headerLogos img {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 480px) {
+    .cta {
+        padding: 48px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    /*            body {
+                font-family: 'Montserrat Light', sans-serif;
+            }*/
+
+    h1,
+    h2 {
+        font-weight: 700;
+        margin-bottom: 50px;
+    }
+
+    h3 {
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    #mainOfferText {
+        margin-bottom: 0;
+    }
+
+    #mainOfferText> :last-child {
+        margin-bottom: 0;
+    }
+
+    #bottomFormCol form {
+        margin-top: 60px;
+    }
+
+    body .mktoForm .mktoButtonWrap.mktoSimple .mktoButton {
+        font-size: 18px !important;
+    }
+
+    header {
+        text-align: left;
+    }
+
+    .headerLogos {
+        float: left;
+    }
+
+    .headerRight {
+        float: right;
+        margin-top: 0;
+    }
+
+    .banner-sidebar-form .mainOfferText {
+        padding-top: 60px;
+    }
+
+    .banner-sidebar-image .mainOfferText {
+        padding-top: 30px;
+    }
+
+    section {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    footer>section {
+        padding-top: 60px;
+        padding-bottom: 100px;
+    }
+
+    .btn {
+        min-width: 0;
+    }
+
+    .cta {
+        padding: 60px 14.423%;
+        max-width: none;
+    }
+
+    /* 5.414% 3.185%  */
+    .col {
+        margin-left: 0;
+        float: left;
+        margin-bottom: 0;
+    }
+
+    .row1col~.row1col,
+    .row3col~.row3col {
+        margin-left: 2.34742%;
+    }
+
+    .col:first-child,
+    .row1col,
+    .row3col,
+    .col.fullwidth {
+        margin-left: 0;
+    }
+
+    .fullwidth {
+        width: 100%;
+    }
+
+    .row1col,
+    .row3col {
+        display: none;
+        float: left;
+    }
+
+    .row1-2col .row1col,
+    .row3-2col .row3col {
+        width: 48.82629%;
+    }
+
+    .row1-3col .row1col,
+    .row3-3col .row3col {
+        width: 31.76838%;
+    }
+
+    #bottomForm .mktoFormRow {
+        float: left;
+        width: 47.835990888%;
+    }
+
+    #bottomForm .mktoFormRow:nth-child(even) {
+        margin-right: 4.328018223% !important;
+    }
+
+    #bottomForm .mktoButtonRow {
+        clear: both;
+    }
+
+    .presenter-headshot,
+    .presenter-bio {
+        display: table-cell;
+        padding-bottom: 20px;
+    }
+
+    .presenter-headshot {
+        width: 15.625%;
+        text-align: left;
+        vertical-align: top;
+        padding-right: 30px;
+    }
+
+    .presenter-bio {
+        width: 84.375%;
+        vertical-align: top;
+        padding-top: 10px;
+    }
+
+    tr:last-child .presenter-headshot,
+    tr:last-child .presenter-bio {
+        padding-bottom: 0;
+    }
+
+    .mainOfferText {
+        float: none;
+        width: 100% !important;
+    }
+
+    .banner-sidebar-form .mainOfferText,
+    .banner-sidebar-image .mainOfferText {
+        width: 45.82629% !important;
+        float: left;
+        margin-right: 3%;
+    }
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+
+    section {
+        clear: both;
+        padding-top: 70px;
+        padding-bottom: 120px;
+    }
+
+    .col-md-1 {
+        width: 6.18153%;
+    }
+
+    .col-md-2 {
+        width: 14.71048%;
+    }
+
+    .col-md-3 {
+        width: 23.23943%;
+    }
+
+    .col-md-4 {
+        width: 31.76838%;
+    }
+
+    .col-md-5 {
+        width: 40.29733%;
+    }
+
+    .col-md-6 {
+        width: 48.82629%;
+    }
+
+    .col-md-7 {
+        width: 57.35524%;
+    }
+
+    .col-md-8 {
+        width: 65.88419%;
+    }
+
+    .col-md-9 {
+        width: 74.41314%;
+    }
+
+    .col-md-10 {
+        width: 82.94209%;
+    }
+
+    .col-md-11 {
+        width: 91.47104%;
+    }
+
+    .offset-md-1 {
+        margin-left: 10.87637%;
+    }
+
+    .offset-md-2 {
+        margin-left: 19.40532%;
+    }
+
+    .offset-md-3 {
+        margin-left: 27.93427%;
+    }
+
+    .offset-md-4 {
+        margin-left: 36.46322%;
+    }
+
+    .offset-md-5 {
+        margin-left: 44.99217%;
+    }
+
+    .offset-md-6 {
+        margin-left: 53.52113%;
+    }
+
+    .offset-md-7 {
+        margin-left: 62.05008%;
+    }
+
+    .offset-md-8 {
+        margin-left: 70.57903%;
+    }
+
+    .offset-md-9 {
+        margin-left: 79.10798%;
+    }
+
+    .offset-md-10 {
+        margin-left: 87.63693%;
+    }
+
+    .offset-md-11 {
+        margin-left: 96.16588%;
+    }
+
+}
+
+@media screen and (min-width: 992px) {
+
+    body {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .banner-sidebar-form .mainOfferText,
+    .banner-sidebar-image .mainOfferText {
+        width: 48.82629% !important;
+        float: left;
+        margin-right: 0;
+    }
+
+    section {
+        clear: both;
+        padding-top: 80px;
+        padding-bottom: 120px;
+    }
+
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+    }
+
+    h2 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    h3 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .col-lg-1 {
+        width: 6.18153%;
+    }
+
+    .col-lg-2 {
+        width: 14.71048%;
+    }
+
+    .col-lg-3 {
+        width: 23.23943%;
+    }
+
+    .col-lg-4 {
+        width: 31.76838%;
+    }
+
+    .col-lg-5 {
+        width: 40.29733%;
+    }
+
+    .col-lg-6 {
+        width: 48.82629%;
+    }
+
+    .col-lg-7 {
+        width: 57.35524%;
+    }
+
+    .col-lg-8 {
+        width: 65.88419%;
+    }
+
+    .col-lg-9 {
+        width: 74.41314%;
+    }
+
+    .col-lg-10 {
+        width: 82.94209%;
+    }
+
+    .col-lg-11 {
+        width: 91.47104%;
+    }
+
+    .offset-lg-1 {
+        margin-left: 10.87637%;
+    }
+
+    .offset-lg-2 {
+        margin-left: 19.40532%;
+    }
+
+    .offset-lg-3 {
+        margin-left: 27.93427%;
+    }
+
+    .offset-lg-4 {
+        margin-left: 36.46322%;
+    }
+
+    .offset-lg-5 {
+        margin-left: 44.99217%;
+    }
+
+    .offset-lg-6 {
+        margin-left: 53.52113%;
+    }
+
+    .offset-lg-7 {
+        margin-left: 62.05008%;
+    }
+
+    .offset-lg-8 {
+        margin-left: 70.57903%;
+    }
+
+    .offset-lg-9 {
+        margin-left: 79.10798%;
+    }
+
+    .offset-lg-10 {
+        margin-left: 87.63693%;
+    }
+
+    .offset-lg-11 {
+        margin-left: 96.16588%;
+    }
+
+}
+
+@media screen and (min-width: 1328px) {
+
+    section {
+        padding-right: 24px;
+        padding-left: 24px;
+    }
+
+}
